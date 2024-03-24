@@ -55,7 +55,7 @@ public final class TapRemoteMessage implements EspressoRemoteMessage.To<ClickVie
   public static final EspressoRemoteMessage.From<Tapper, ClickViewActionProto.Tap> FROM =
       new EspressoRemoteMessage.From<Tapper, ClickViewActionProto.Tap>() {
         @Override
-        public Tapper fromProto(ClickViewActionProto.Tap tap) {
+        public Tapper toProto(ClickViewActionProto.Tap tap) {
           return getTapperFromTapProto(tap);
         }
       };
