@@ -51,7 +51,7 @@ public final class SwipeRemoteMessage
   }
 
   @Override
-  public SwipeViewActionProto.Swipe toProto() {
+  public SwipeViewActionProto.Swipe fromProto() {
     switch (swipe) {
       case FAST:
         return SwipeViewActionProto.Swipe.FAST;
